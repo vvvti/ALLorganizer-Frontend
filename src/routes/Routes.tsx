@@ -6,7 +6,7 @@ import {Login} from '../components/pages/Login/Login';
 import {Registration} from '../components/pages/Registration/Registration';
 
 
-export const Routes = () => {
+export const Routes:React.FC = () => {
     return (
         <Switch>
             <Route exact path={RoutesConsts.HOME} component={Home} />
