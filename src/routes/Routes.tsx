@@ -4,6 +4,7 @@ import {RoutesConsts} from '../helpers/RoutesConsts';
 import {Home} from '../components/pages/Home/Home';
 import {Login} from '../components/pages/Login/Login';
 import {Registration} from '../components/pages/Registration/Registration';
+import {Dashboard} from '../components/pages/Dashboard/Dashboard'
 
 
 export const Routes:React.FC = () => {
@@ -12,7 +13,7 @@ export const Routes:React.FC = () => {
             <Route exact path={RoutesConsts.HOME} component={Home} />
             <Route exact path={RoutesConsts.LOGIN} component={Login} />
             <Route exact path={RoutesConsts.REGISTRATION} component={Registration} />
-            {/* <Route exact path={RoutesConsts.DASHBOARD} component={} /> */}
+            <Route exact path={RoutesConsts.DASHBOARD} component={Dashboard} />
         </Switch>
     );
 };
