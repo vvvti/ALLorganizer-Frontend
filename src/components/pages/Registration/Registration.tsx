@@ -10,6 +10,9 @@ import {INITIAL_REGISTER_VALUES} from '../../../helpers/constants';
 import {validationSchema} from './Registration.helpers';
 import {RoutesConsts} from '../../../helpers/RoutesConsts';
 import {RegisterFormValues} from '../../../helpers/types';
+import {useRegister} from '../../../hooks/useRegister'
+
+
 export const Registration: React.FC = () => {
     const {postRegister, registerError} = useRegister();
 
