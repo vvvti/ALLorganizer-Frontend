@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {NavLink} from 'react-router-dom';
+import {colors} from '../../styles/theme'
 
 export const StyledNavbar = styled.div`
     display: flex;
@@ -7,7 +8,7 @@ export const StyledNavbar = styled.div`
     align-items: center;
     justify-content: space-around;
     align-content: space-around;
-    background-color: hsl(240, 2%, 16%);
+    background-color: ${colors.backgroundPrimary};
 `;
 
 export const StyledTitle = styled.div`
@@ -15,7 +16,7 @@ export const StyledTitle = styled.div`
     flex-grow: 1;
     align-items: center;
     justify-content: center;
-    background-color: hsl(240, 2%, 16%);
+    background-color: ${colors.backgroundPrimary};
     color: white;
     text-transform: uppercase;
     text-align: center;
@@ -35,7 +36,7 @@ export const StyledMenu = styled.div`
     justify-content: center;
     color: white;
     text-transform: uppercase;
-    background-color: hsl(240, 2%, 16%);
+    background-color: ${colors.backgroundPrimary};
 
     @media (max-width: 800px) {
         flex-basis: 100px;
