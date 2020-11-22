@@ -14,6 +14,7 @@ export const Routes:React.FC = () => {
             <Route exact path={RoutesConsts.LOGIN} component={Login} />
             <Route exact path={RoutesConsts.REGISTRATION} component={Registration} />
             <Route exact path={RoutesConsts.DASHBOARD} component={Dashboard} />
+            <Route exact path={RoutesConsts.ANALYSES} component={Analyses} />
         </Switch>
     );
 };
