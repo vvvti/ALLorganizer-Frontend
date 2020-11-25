@@ -4,7 +4,8 @@ import {RoutesConsts} from '../helpers/RoutesConsts';
 import {Home} from '../components/pages/Home/Home';
 import {Login} from '../components/pages/Login/Login';
 import {Registration} from '../components/pages/Registration/Registration';
-import {Dashboard} from '../components/pages/Dashboard/Dashboard'
+import {Dashboard} from '../components/pages/Dashboard/Dashboard';
+import {UserProfile} from '../components/pages/UserProfile/UserProfile';
 
 
 export const Routes:React.FC = () => {
@@ -14,7 +15,11 @@ export const Routes:React.FC = () => {
             <Route exact path={RoutesConsts.LOGIN} component={Login} />
             <Route exact path={RoutesConsts.REGISTRATION} component={Registration} />
             <Route exact path={RoutesConsts.DASHBOARD} component={Dashboard} />
+<<<<<<< HEAD
+            <Route exact path={RoutesConsts.USERPROFILE} component={UserProfile} />
+=======
             <Route exact path={RoutesConsts.ANALYSES} component={Analyses} />
+>>>>>>> 0d478721162149fd23af160f1e10c46cdda28288
         </Switch>
     );
 };
