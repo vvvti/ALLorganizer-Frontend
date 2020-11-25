@@ -5,9 +5,9 @@ import {colors} from '../../styles/theme'
 export const StyledFooter = styled.div`
     background-color: ${colors.backgroundPrimary};
     padding: 20px;
-    position: fixed,
-    left: 0,
-    bottom: 0,
-    height: 60px,
-    width: 100%,
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
 `;
