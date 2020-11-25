@@ -12,9 +12,10 @@ export const Navbar: React.FC = () => {
             </StyledMenu>
             <StyledTitle>ALL Organizer</StyledTitle>
             <StyledMenu>
-                <StyledNavLink to={RoutesConsts.HOME}>HOME</StyledNavLink>
-                <StyledNavLink to={RoutesConsts.LOGIN}>Login</StyledNavLink>
-                <StyledNavLink to={RoutesConsts.REGISTRATION}>Register</StyledNavLink>
+                <StyledNavLink to={RoutesConsts.HOME}>home</StyledNavLink>
+                <StyledNavLink to={RoutesConsts.LOGIN}>login</StyledNavLink>
+                <StyledNavLink to={RoutesConsts.REGISTRATION}>register</StyledNavLink>
+                <StyledNavLink to={RoutesConsts.USERPROFILE}>account</StyledNavLink>
             </StyledMenu>
         </StyledNavbar>
     )
