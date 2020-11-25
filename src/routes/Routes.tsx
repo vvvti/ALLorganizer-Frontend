@@ -15,7 +15,11 @@ export const Routes:React.FC = () => {
             <Route exact path={RoutesConsts.LOGIN} component={Login} />
             <Route exact path={RoutesConsts.REGISTRATION} component={Registration} />
             <Route exact path={RoutesConsts.DASHBOARD} component={Dashboard} />
+<<<<<<< HEAD
             <Route exact path={RoutesConsts.USERPROFILE} component={UserProfile} />
+=======
+            <Route exact path={RoutesConsts.ANALYSES} component={Analyses} />
+>>>>>>> 0d478721162149fd23af160f1e10c46cdda28288
         </Switch>
     );
 };
