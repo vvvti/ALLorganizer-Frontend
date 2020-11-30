@@ -11,3 +11,9 @@ export const INITIAL_REGISTER_VALUES: RegisterFormValues = {
     email: '',
     password: '',
 };
+
+export const USERDEFAULT: UserValues = {
+    email: '',
+    id: '',
+    username: '',
+};

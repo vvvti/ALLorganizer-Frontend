@@ -8,3 +8,11 @@ export interface RegisterFormValues {
     username: string;
     password: string;
 }
+
+export interface UserValues {
+    email: string;
+    firstName: string;
+    id: string;
+    lastName: string;
+    username: string;
+}
