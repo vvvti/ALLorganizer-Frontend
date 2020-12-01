@@ -1,3 +1,4 @@
+import {RouteComponentProps} from 'react-router-dom';
 export interface LoginFormValues {
     email: string;
     password: string;
@@ -15,4 +16,10 @@ export interface UserValues {
     id: string;
     lastName: string;
     username: string;
+}
+
+export interface AuthRouteProps {
+    Component: React.FC<RouteComponentProps>;
+    path: string;
+    exact?: boolean;
 }
