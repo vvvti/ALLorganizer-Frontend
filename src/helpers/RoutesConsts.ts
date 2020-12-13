@@ -3,6 +3,6 @@ export enum RoutesConsts {
     LOGIN = '/login',
     REGISTRATION = '/registration',
     DASHBOARD = '/dashboard',
-    USERPROFILE = '/userProfile'
+    USERPROFILE = '/userProfile',
     ANALYSES = '/analyses'
 }

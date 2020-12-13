@@ -1,4 +1,4 @@
-import {LoginFormValues, RegisterFormValues} from './types';
+import {LoginFormValues, RegisterFormValues, UserValues} from './types';
 
 
 export const INITIAL_LOGIN_VALUES: LoginFormValues = {
