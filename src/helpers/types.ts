@@ -12,9 +12,7 @@ export interface RegisterFormValues {
 
 export interface UserValues {
     email: string;
-    firstName: string;
     id: string;
-    lastName: string;
     username: string;
 }
 

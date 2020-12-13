@@ -6,7 +6,8 @@ import {Login} from '../components/pages/Login/Login';
 import {Registration} from '../components/pages/Registration/Registration';
 import {Dashboard} from '../components/pages/Dashboard/Dashboard';
 import {UserProfile} from '../components/pages/UserProfile/UserProfile';
-
+import {NotFoundPage} from '../components/pages/NotFoundPage/NotFoundPage';
+import {Analyses} from '../components/pages/Analyses/Analyses';
 
 export const Routes:React.FC = () => {
     return (
@@ -17,6 +18,9 @@ export const Routes:React.FC = () => {
             <Route exact path={RoutesConsts.DASHBOARD} component={Dashboard} />
             <Route exact path={RoutesConsts.USERPROFILE} component={UserProfile} />
             <Route exact path={RoutesConsts.ANALYSES} component={Analyses} />
+            <Route>
+                <NotFoundPage />
+            </Route>
         </Switch>
     );
 };
