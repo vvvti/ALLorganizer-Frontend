@@ -43,10 +43,10 @@ export const Footer: React.FC = () => {
                     <StyledHeader>Info</StyledHeader>
                     <ul>
                         <StyledNavLink to={RoutesConsts.HOME}>
-                            <StyledListElement>Social Lending</StyledListElement>
+                            <StyledListElement>ALL</StyledListElement>
                         </StyledNavLink>
                         <StyledExternalLink href={ALL}>
-                            <StyledListElement>Calculator</StyledListElement>
+                            <StyledListElement>Org</StyledListElement>
                         </StyledExternalLink>
                     </ul>
                 </div>
