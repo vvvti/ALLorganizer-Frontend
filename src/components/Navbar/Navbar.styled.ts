@@ -4,11 +4,12 @@ import {colors} from '../../styles/theme'
 
 export const StyledNavbar = styled.div`
     display: flex;
-    height: 5em;
+    height: 60px;
     align-items: center;
     justify-content: space-around;
     align-content: space-around;
     background-color: ${colors.backgroundPrimary};
+    z-index: 100;
 `;
 
 export const StyledTitle = styled.div`

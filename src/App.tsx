@@ -15,8 +15,7 @@ export const App: React.FC = () => {
       <GlobalStyles />
       <Router>
       <Navbar />
-        <StyledContent className="App">          
-          <h1>ALLorganizer frontend</h1>          
+        <StyledContent className="App">                   
           <Routes />
         </StyledContent>
         <Footer />
