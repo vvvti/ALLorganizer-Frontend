@@ -32,7 +32,7 @@ export const HomeCards = () => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            ALLorganizer
+            Utwórz nowe konto
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nam asperiores sapiente id odit eligendi reiciendis voluptatem praesentium atque officia?
