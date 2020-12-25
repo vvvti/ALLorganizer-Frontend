@@ -4,12 +4,16 @@ import {colors} from '../../styles/theme'
 
 export const StyledNavbar = styled.div`
     display: flex;
-    height: 60px;
+    height: 65px;
     align-items: center;
     justify-content: space-around;
     align-content: space-around;
     background-color: ${colors.backgroundPrimary};
-    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2000;
+    width: 100%;
 `;
 
 export const StyledTitle = styled.div`
@@ -23,6 +27,7 @@ export const StyledTitle = styled.div`
     text-align: center;
     font-size: 2.5em;
     font-weight: bold;
+    z-index: 2000;
 
     @media (max-width: 1200px) {
         font-size: 24px;
