@@ -4,11 +4,11 @@ import {colors} from '../../styles/theme'
 
 export const StyledFooter = styled.div`
     background-color: ${colors.backgroundPrimary};
-    
+    z-index: 2000;
     position: fixed;
     left: 0;
     bottom: 0;
-    height: 8empx;
+    height: 8em;
     width: 100%;
 `;
 
