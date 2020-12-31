@@ -5,7 +5,6 @@ export const Dashboard: React.FC = () => {
     return (
         <div>
             <DashboardDrawer />
-            <h1>Dashboard</h1>
         </div>
     )
 }
