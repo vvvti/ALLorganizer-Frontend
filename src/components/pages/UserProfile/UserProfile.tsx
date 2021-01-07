@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import {StyledPageContainer, StyledProfileContainer, StyledAvatar} from './UserProfile.styled';
 
 export const UserProfile: React.FC = () => {
     return (
-        <div>
-            <h1>UserProfile</h1>
-        </div>
+        <StyledPageContainer>
+            <StyledProfileContainer>
+                <StyledAvatar>
+                    
+                </StyledAvatar>
+            </StyledProfileContainer>
+        </StyledPageContainer>
     )
 }
