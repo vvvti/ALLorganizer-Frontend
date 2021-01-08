@@ -14,7 +14,7 @@ const useStyles = makeStyles({
     maxWidth: 345,
   },
   media: {
-    height: 140,
+    height: 220,
   },
 });
 
@@ -35,16 +35,16 @@ export const HomeCards = () => {
             Utwórz nowe konto
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nam asperiores sapiente id odit eligendi reiciendis voluptatem praesentium atque officia?
+            Zarejestruj nowe konto w aplikacji ALL organizer
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
+          Logowanie
         </Button>
         <Button size="small" color="primary">
-          Learn More
+          Rejestracja
         </Button>
       </CardActions>
     </Card>
