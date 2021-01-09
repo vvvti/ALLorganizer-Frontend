@@ -59,7 +59,7 @@ export const DashboardDrawer = () => {
         <div className={classes.toolbar} />
         <Divider />
         <List>
-          {['Inbox', 'Analyses', 'Surgeries', 'Pharmacy'].map((text, index) => (
+          {['Analityka', 'Zabiegi', 'Bilans płynów', 'Apteka'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
               <ListItemText primary={text} />
@@ -68,7 +68,7 @@ export const DashboardDrawer = () => {
         </List>
         <Divider />
         <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
+          {['Morfologia', 'CRP', 'Mocz', 'Biochemia'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
               <ListItemText primary={text} />
