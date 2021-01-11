@@ -4,7 +4,7 @@ export const colors = {
     inputBorder: 'hsl(0, 0%, 80%)',
     backgroundContainer: 'hsl(0, 0%, 100%)',
     fontColor: ' hsl(0, 0%, 0%)',
-    boxShadow: 'hsla(0, 0%, 100%, 0.75)',
+    boxShadow: 'hsla(211, 24%, 78%, 0.5)',
     link: 'hsl(0, 0%, 100%)',
     backgroundSecondary: 'hsl(220, 82%, 16%)',
     whiteContainer: 'hsl(0, 0%, 100%)',
