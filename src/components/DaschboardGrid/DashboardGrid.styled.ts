@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import {colors} from '../../styles/theme'
+import {colors} from '../../styles/theme';
+import {Button} from '@material-ui/core';
 
 
 export const StyledContainer = styled.div`
@@ -49,4 +50,10 @@ export const StyledUrineContainer = styled.div`
     align-items: center;
     box-shadow: 0 4px 12px ${colors.boxShadow};
     height: 35vh;
+`;
+
+export const StyledButton = styled(Button)`
+    width: 200px;
+    height: 40px;
+    margin: 15px;
 `;
