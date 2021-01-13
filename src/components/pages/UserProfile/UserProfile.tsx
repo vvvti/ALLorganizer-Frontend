@@ -1,5 +1,10 @@
 import React from 'react';
-import {StyledPageContainer, StyledProfileContainer, StyledAvatar} from './UserProfile.styled';
+import {
+    StyledPageContainer,
+    StyledProfileContainer,
+    StyledAvatar,
+    StyledButton
+} from './UserProfile.styled';
 
 export const UserProfile: React.FC = () => {
     return (
@@ -8,6 +13,12 @@ export const UserProfile: React.FC = () => {
                 <StyledAvatar>
                     
                 </StyledAvatar>
+                <StyledButton
+                        size="small"
+                        variant="contained"
+                        color="primary">
+                            Logout
+                </StyledButton>
             </StyledProfileContainer>
         </StyledPageContainer>
     )
