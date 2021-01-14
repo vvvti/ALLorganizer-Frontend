@@ -18,6 +18,7 @@ export const StyledFooterContainer = styled.div`
     align-items: flex-start;
     justify-content: space-around;
     margin: auto;
+    color: white;
 `;
 
 
@@ -32,6 +33,7 @@ export const StyledListElement = styled.li`
 export const StyledHeader = styled.h6`
     font-size: 12px;
     margin-bottom: 0;
+    margin-top: 1.5em;
     text-transform: uppercase;
 `;
 
