@@ -9,7 +9,17 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
-import {DaschboardRoutes} from '../../routes/DashboardRoutes'; 
+import {DaschboardRoutes} from '../../routes/DashboardRoutes';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useParams,
+  useRouteMatch
+} from "react-router-dom";
+import {Analyses} from '../pages/Analyses/Analyses';
+import {DashboardGrid} from '../DaschboardGrid/DashboardGrid';
 
 
 const drawerWidth = 240;
@@ -44,8 +54,10 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export const DashboardDrawer = () => {
   const classes = useStyles();
+  let { path, url } = useRouteMatch();
 
   return (
+  
     <div className={classes.root}>
       <CssBaseline />      
       <Drawer
@@ -78,8 +90,19 @@ export const DashboardDrawer = () => {
       </Drawer>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        <DaschboardRoutes />
+        <Switch>
+        <Route exact path={path}>
+          <DashboardGrid />
+        </Route>
+        {/* <Route path={`${path}/analyses`}>
+          <Analyses />
+        </Route> */}
+        <Route exact path={`${path}/analyses`}>
+          <Analyses />
+        </Route>
+      </Switch>
       </main>
     </div>
+  
   );
 }

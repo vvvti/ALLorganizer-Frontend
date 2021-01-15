@@ -9,7 +9,7 @@ export const DaschboardRoutes:React.FC = () => {
     return (
         <Switch>
             <Route exact path={RoutesConsts.DASHBOARD} component={DashboardGrid} />
-            <Route exact path={RoutesConsts.CBC} component={Analyses} />
+            
             <Route>
                 <NotFoundPage />
             </Route>
