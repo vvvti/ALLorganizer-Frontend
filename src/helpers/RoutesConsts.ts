@@ -4,5 +4,4 @@ export enum RoutesConsts {
     REGISTRATION = '/registration',
     DASHBOARD = '/dashboard',
     USERPROFILE = '/userProfile',
-    CBC = 'dashboard/cbc'
 }
