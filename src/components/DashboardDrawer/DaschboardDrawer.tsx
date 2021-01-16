@@ -9,17 +9,15 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
-import {DaschboardRoutes} from '../../routes/DashboardRoutes';
 import {
-  BrowserRouter as Router,
-  Switch,
   Route,
-  Link,
-  useParams,
-  useRouteMatch
+  useRouteMatch,
+  Switch
 } from "react-router-dom";
 import {Analyses} from '../pages/Analyses/Analyses';
 import {DashboardGrid} from '../DaschboardGrid/DashboardGrid';
+import {StyledLink} from './DaschboardDrawer.styled';
+import {Surgeries} from '../DaschboardPages/Surgeries/Surgeries';
 
 
 const drawerWidth = 240;
@@ -71,12 +69,25 @@ export const DashboardDrawer = () => {
         <div className={classes.toolbar} />
         <Divider />
         <List>
-          {['Analityka', 'Zabiegi', 'Bilans płynów', 'Apteka'].map((text, index) => (
+          {/* {['Analityka', 'Zabiegi', 'Bilans płynów', 'Apteka'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
-          ))}
+          ))} */}
+            <StyledLink to={`${url}`}>
+              <ListItem button>              
+                <ListItemIcon><InboxIcon /></ListItemIcon>
+                <ListItemText>Analityka</ListItemText>              
+              </ListItem>
+            </StyledLink>
+            <StyledLink to={`${url}/surgeries`}>
+              <ListItem button>              
+                <ListItemIcon><InboxIcon /></ListItemIcon>
+                <ListItemText>Zabiegi</ListItemText>              
+              </ListItem>
+            </StyledLink>
+            
         </List>
         <Divider />
         <List>
@@ -91,16 +102,16 @@ export const DashboardDrawer = () => {
       <main className={classes.content}>
         <div className={classes.toolbar} />
         <Switch>
-        <Route exact path={path}>
-          <DashboardGrid />
-        </Route>
-        {/* <Route path={`${path}/analyses`}>
-          <Analyses />
-        </Route> */}
-        <Route exact path={`${path}/analyses`}>
-          <Analyses />
-        </Route>
-      </Switch>
+          <Route exact path={path}>
+            <DashboardGrid />
+          </Route>
+          <Route exact path={`${path}/cbc`}>
+            <Analyses />
+          </Route>
+          <Route exact path={`${path}/surgeries`}>
+            <Surgeries />
+          </Route>
+        </Switch>
       </main>
     </div>
   
