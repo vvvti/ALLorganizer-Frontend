@@ -14,10 +14,12 @@ import {
   useRouteMatch,
   Switch
 } from "react-router-dom";
-import {Analyses} from '../pages/Analyses/Analyses';
 import {DashboardGrid} from '../DaschboardGrid/DashboardGrid';
 import {StyledLink} from './DaschboardDrawer.styled';
 import {Surgeries} from '../DaschboardPages/Surgeries/Surgeries';
+import {Balances} from '../DaschboardPages/Balances/Balances';
+import {Medicines} from '../DaschboardPages/Medicines/Medicines';
+import {Cbc} from '../DaschboardPages/Cbc/Cbc'; 
 
 
 const drawerWidth = 240;
@@ -69,12 +71,6 @@ export const DashboardDrawer = () => {
         <div className={classes.toolbar} />
         <Divider />
         <List>
-          {/* {['Analityka', 'Zabiegi', 'Bilans płynów', 'Apteka'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))} */}
             <StyledLink to={`${url}`}>
               <ListItem button>              
                 <ListItemIcon><InboxIcon /></ListItemIcon>
@@ -87,16 +83,45 @@ export const DashboardDrawer = () => {
                 <ListItemText>Zabiegi</ListItemText>              
               </ListItem>
             </StyledLink>
-            
+            <StyledLink to={`${url}/balances`}>
+              <ListItem button>              
+                <ListItemIcon><InboxIcon /></ListItemIcon>
+                <ListItemText>Bilans Płynów</ListItemText>              
+              </ListItem>
+            </StyledLink>
+            <StyledLink to={`${url}/medicines`}>
+              <ListItem button>              
+                <ListItemIcon><InboxIcon /></ListItemIcon>
+                <ListItemText>Lekarstwa</ListItemText>              
+              </ListItem>
+            </StyledLink>            
         </List>
         <Divider />
         <List>
-          {['Morfologia', 'CRP', 'Mocz', 'Biochemia'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
+            <StyledLink to={`${url}/cbc`}>
+              <ListItem button>              
+                <ListItemIcon><InboxIcon /></ListItemIcon>
+                <ListItemText>Morfologia</ListItemText>              
+              </ListItem>
+            </StyledLink>
+            <StyledLink to={`${url}/crp`}>
+              <ListItem button>              
+                <ListItemIcon><InboxIcon /></ListItemIcon>
+                <ListItemText>CRP</ListItemText>              
+              </ListItem>
+            </StyledLink>
+            <StyledLink to={`${url}/urine`}>
+              <ListItem button>              
+                <ListItemIcon><InboxIcon /></ListItemIcon>
+                <ListItemText>Badanie moczu</ListItemText>              
+              </ListItem>
+            </StyledLink>
+            <StyledLink to={`${url}/alt_ast`}>
+              <ListItem button>              
+                <ListItemIcon><InboxIcon /></ListItemIcon>
+                <ListItemText>Biochemia</ListItemText>              
+              </ListItem>
+            </StyledLink>          
         </List>
       </Drawer>
       <main className={classes.content}>
@@ -106,10 +131,19 @@ export const DashboardDrawer = () => {
             <DashboardGrid />
           </Route>
           <Route exact path={`${path}/cbc`}>
-            <Analyses />
+            <Cbc />
           </Route>
           <Route exact path={`${path}/surgeries`}>
             <Surgeries />
+          </Route>
+          <Route exact path={`${path}/balances`}>
+            <Balances />
+          </Route>
+          <Route exact path={`${path}/medicines`}>
+            <Medicines />
+          </Route>
+          <Route exact path={`${path}/cbc`}>
+            <Medicines />
           </Route>
         </Switch>
       </main>
