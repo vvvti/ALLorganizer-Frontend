@@ -7,8 +7,14 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+import LocalPharmacyIcon from '@material-ui/icons/LocalPharmacy';
+import LocalDrinkIcon from '@material-ui/icons/LocalDrink';
+import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
+import PollIcon from '@material-ui/icons/Poll';
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+import TimelineIcon from '@material-ui/icons/Timeline';
+import PieChartIcon from '@material-ui/icons/PieChart';
+import InvertColorsIcon from '@material-ui/icons/InvertColors';
 import {
   Route,
   useRouteMatch,
@@ -19,7 +25,8 @@ import {StyledLink} from './DaschboardDrawer.styled';
 import {Surgeries} from '../DaschboardPages/Surgeries/Surgeries';
 import {Balances} from '../DaschboardPages/Balances/Balances';
 import {Medicines} from '../DaschboardPages/Medicines/Medicines';
-import {Cbc} from '../DaschboardPages/Cbc/Cbc'; 
+import {Cbc} from '../DaschboardPages/Cbc/Cbc';
+import {Crp} from '../DaschboardPages/Crp/Crp';
 
 
 const drawerWidth = 240;
@@ -73,25 +80,25 @@ export const DashboardDrawer = () => {
         <List>
             <StyledLink to={`${url}`}>
               <ListItem button>              
-                <ListItemIcon><InboxIcon /></ListItemIcon>
+                <ListItemIcon><PollIcon /></ListItemIcon>
                 <ListItemText>Analityka</ListItemText>              
               </ListItem>
             </StyledLink>
             <StyledLink to={`${url}/surgeries`}>
               <ListItem button>              
-                <ListItemIcon><InboxIcon /></ListItemIcon>
+                <ListItemIcon><CardGiftcardIcon /></ListItemIcon>
                 <ListItemText>Zabiegi</ListItemText>              
               </ListItem>
             </StyledLink>
             <StyledLink to={`${url}/balances`}>
               <ListItem button>              
-                <ListItemIcon><InboxIcon /></ListItemIcon>
+                <ListItemIcon><LocalDrinkIcon /></ListItemIcon>
                 <ListItemText>Bilans Płynów</ListItemText>              
               </ListItem>
             </StyledLink>
             <StyledLink to={`${url}/medicines`}>
               <ListItem button>              
-                <ListItemIcon><InboxIcon /></ListItemIcon>
+                <ListItemIcon><LocalPharmacyIcon /></ListItemIcon>
                 <ListItemText>Lekarstwa</ListItemText>              
               </ListItem>
             </StyledLink>            
@@ -100,25 +107,25 @@ export const DashboardDrawer = () => {
         <List>
             <StyledLink to={`${url}/cbc`}>
               <ListItem button>              
-                <ListItemIcon><InboxIcon /></ListItemIcon>
+                <ListItemIcon><FavoriteBorderIcon /></ListItemIcon>
                 <ListItemText>Morfologia</ListItemText>              
               </ListItem>
             </StyledLink>
             <StyledLink to={`${url}/crp`}>
               <ListItem button>              
-                <ListItemIcon><InboxIcon /></ListItemIcon>
+                <ListItemIcon><TimelineIcon /></ListItemIcon>
                 <ListItemText>CRP</ListItemText>              
               </ListItem>
             </StyledLink>
             <StyledLink to={`${url}/urine`}>
               <ListItem button>              
-                <ListItemIcon><InboxIcon /></ListItemIcon>
+                <ListItemIcon><PieChartIcon /></ListItemIcon>
                 <ListItemText>Badanie moczu</ListItemText>              
               </ListItem>
             </StyledLink>
             <StyledLink to={`${url}/alt_ast`}>
               <ListItem button>              
-                <ListItemIcon><InboxIcon /></ListItemIcon>
+                <ListItemIcon><InvertColorsIcon /></ListItemIcon>
                 <ListItemText>Biochemia</ListItemText>              
               </ListItem>
             </StyledLink>          
@@ -142,8 +149,8 @@ export const DashboardDrawer = () => {
           <Route exact path={`${path}/medicines`}>
             <Medicines />
           </Route>
-          <Route exact path={`${path}/cbc`}>
-            <Medicines />
+          <Route exact path={`${path}/crp`}>
+            <Crp />
           </Route>
         </Switch>
       </main>
