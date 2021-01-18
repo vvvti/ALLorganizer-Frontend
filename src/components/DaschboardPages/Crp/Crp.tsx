@@ -2,19 +2,19 @@ import React from 'react';
 import {
     StyledContainer,
     StyledListContainer,
-    StyledCbcSwapContainer,
+    StyledCrpSwapContainer,
     StyledButton
-} from './Cbc.styled';
+} from './Crp.styled';
 
- export const Cbc: React.FC = () => {
+ export const Crp: React.FC = () => {
     return (
         <StyledContainer>
             <StyledListContainer>
-               <h4>Morfologia krwi - lista wyników badań</h4>
+               <h4>Białko C-reaktywne (CRP) - lista wyników badań</h4>
             </StyledListContainer>
-            <StyledCbcSwapContainer>
-            <h4>Morfologia krwi - wykres ostatnich wyników</h4>
-            <h4>Morfologia krwi - wynik ostatniego badania</h4>
+            <StyledCrpSwapContainer>
+            <h4>Białko C-reaktywne (CRP) - wykres ostatnich wyników</h4>
+            <h4>Białko C-reaktywne (CRP) - wynik ostatniego badania</h4>
             <StyledButton
                         size="small"
                         variant="contained"
@@ -22,7 +22,7 @@ import {
                             Dodaj wyniki badań
                 </StyledButton>
 
-            </StyledCbcSwapContainer>
+            </StyledCrpSwapContainer>
         </StyledContainer>
     )
 }
