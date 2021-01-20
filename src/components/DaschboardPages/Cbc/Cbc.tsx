@@ -5,12 +5,14 @@ import {
     StyledCbcSwapContainer,
     StyledButton
 } from './Cbc.styled';
+import {CbcList} from './CbcList/CbcList';
 
  export const Cbc: React.FC = () => {
     return (
         <StyledContainer>
             <StyledListContainer>
                <h4>Morfologia krwi - lista wyników badań</h4>
+               <CbcList />
             </StyledListContainer>
             <StyledCbcSwapContainer>
             <h4>Morfologia krwi - wykres ostatnich wyników</h4>
