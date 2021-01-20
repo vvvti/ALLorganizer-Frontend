@@ -2,21 +2,21 @@ import React from 'react';
 import {
     StyledContainer,
     StyledListContainer,
-    StyledCrpSwapContainer,
+    StyledUrineSwapContainer,
     StyledButton
-} from './Crp.styled';
-import {CrpList} from './CrpList/CrpList';
+} from './UrineAnalyses.styled';
+import {UrineList} from './UrineList/UrineList';
 
- export const Crp: React.FC = () => {
+ export const UrineAnalyses: React.FC = () => {
     return (
         <StyledContainer>
             <StyledListContainer>
-               <h4>Białko C-reaktywne (CRP) - lista wyników badań</h4>
-               <CrpList />
+               <h4>Badania moczu - lista wyników badań</h4>
+               <UrineList />
             </StyledListContainer>
-            <StyledCrpSwapContainer>
-            <h4>Białko C-reaktywne (CRP) - wykres ostatnich wyników</h4>
-            <h4>Białko C-reaktywne (CRP) - wynik ostatniego badania</h4>
+            <StyledUrineSwapContainer>
+            <h4>Badania moczu - wykres ostatnich wyników</h4>
+            <h4>Badania moczu - wynik ostatniego badania</h4>
             <StyledButton
                         size="small"
                         variant="contained"
@@ -24,7 +24,7 @@ import {CrpList} from './CrpList/CrpList';
                             Dodaj wyniki badań
                 </StyledButton>
 
-            </StyledCrpSwapContainer>
+            </StyledUrineSwapContainer>
         </StyledContainer>
     )
 }

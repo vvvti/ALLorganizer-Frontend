@@ -27,6 +27,7 @@ import {Balances} from '../DaschboardPages/Balances/Balances';
 import {Medicines} from '../DaschboardPages/Medicines/Medicines';
 import {Cbc} from '../DaschboardPages/Cbc/Cbc';
 import {Crp} from '../DaschboardPages/Crp/Crp';
+import {UrineAnalyses} from '../DaschboardPages/UrineAnalyses/UrineAnalyses';
 
 
 const drawerWidth = 240;
@@ -151,6 +152,9 @@ export const DashboardDrawer = () => {
           </Route>
           <Route exact path={`${path}/crp`}>
             <Crp />
+          </Route>
+          <Route exact path={`${path}/urine`}>
+            <UrineAnalyses />
           </Route>
         </Switch>
       </main>
