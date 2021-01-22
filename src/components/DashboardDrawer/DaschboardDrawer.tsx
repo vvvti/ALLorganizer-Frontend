@@ -28,6 +28,7 @@ import {Medicines} from '../DaschboardPages/Medicines/Medicines';
 import {Cbc} from '../DaschboardPages/Cbc/Cbc';
 import {Crp} from '../DaschboardPages/Crp/Crp';
 import {UrineAnalyses} from '../DaschboardPages/UrineAnalyses/UrineAnalyses';
+import {Biochemistry} from '../DaschboardPages/Biochemistry/Biochemistry';
 
 
 const drawerWidth = 240;
@@ -124,7 +125,7 @@ export const DashboardDrawer = () => {
                 <ListItemText>Badanie moczu</ListItemText>              
               </ListItem>
             </StyledLink>
-            <StyledLink to={`${url}/alt_ast`}>
+            <StyledLink to={`${url}/biochemistry`}>
               <ListItem button>              
                 <ListItemIcon><InvertColorsIcon /></ListItemIcon>
                 <ListItemText>Biochemia</ListItemText>              
@@ -155,6 +156,9 @@ export const DashboardDrawer = () => {
           </Route>
           <Route exact path={`${path}/urine`}>
             <UrineAnalyses />
+          </Route>
+          <Route exact path={`${path}/biochemistry`}>
+            <Biochemistry />
           </Route>
         </Switch>
       </main>
