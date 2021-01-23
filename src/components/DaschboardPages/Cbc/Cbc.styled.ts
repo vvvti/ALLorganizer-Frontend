@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 import {colors} from '../../../styles/theme';
 import {Button} from '@material-ui/core';
+import {NavLink} from 'react-router-dom';
+
+export const StyledLink = styled(NavLink)`
+    text-decoration: none;
+    color: black;
+`;
 
 
 export const StyledContainer = styled.div`
