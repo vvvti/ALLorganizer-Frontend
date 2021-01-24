@@ -13,6 +13,7 @@ import {
   } from "react-router-dom";
 import {CbcList} from './CbcList/CbcList';
 import {CbcSwap} from './CbcSwap/CbcSwap';
+import {AddCbc} from './AddCbc/AddCbc';
 
  export const Cbc: React.FC = () => {
     let { path, url } = useRouteMatch();
@@ -26,19 +27,21 @@ import {CbcSwap} from './CbcSwap/CbcSwap';
 
             <StyledCbcSwapContainer>
             <Switch>
-          <Route exact path={path}>
-             <CbcSwap />
-             <StyledLink to={`${url}/addCbc`}>
-             <StyledButton
+              <Route exact path={path}>
+                 <CbcSwap />
+                   <StyledLink to={`${url}/addCbc`}>
+                      <StyledButton
                         size="small"
                         variant="contained"
                         color="primary">
                             Dodaj wyniki badań
-                </StyledButton>
-            </StyledLink>       
-          </Route>          
-        </Switch>
-                
+                       </StyledButton>
+                   </StyledLink>       
+               </Route>
+               <Route path={`${path}/addCbc`}>
+                  <AddCbc />
+               </Route>
+            </Switch>                
             </StyledCbcSwapContainer>
         </StyledContainer>
     )
