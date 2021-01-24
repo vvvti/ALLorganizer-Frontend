@@ -139,7 +139,7 @@ export const DashboardDrawer = () => {
           <Route exact path={path}>
             <DashboardGrid />
           </Route>
-          <Route exact path={`${path}/cbc`}>
+          <Route path={`${path}/cbc`}>
             <Cbc />
           </Route>
           <Route exact path={`${path}/surgeries`}>

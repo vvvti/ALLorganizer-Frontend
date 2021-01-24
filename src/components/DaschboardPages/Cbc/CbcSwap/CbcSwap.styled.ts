@@ -16,3 +16,8 @@ export const StyledSwapContainer = styled.div`
     justify-content: space-between;
     height: 75vh;
 `;
+
+export const ChartContainer = styled.div`
+    margin: 0;
+    padding: 15px;
+`;
