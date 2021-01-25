@@ -3,7 +3,8 @@ import {
     StyledContainer,
     StyledListContainer,
     StyledCrpSwapContainer,
-    StyledButton
+    StyledButton,
+    StyledLink,
 } from './Crp.styled';
 import {CrpList} from './CrpList/CrpList';
 import {
@@ -11,6 +12,8 @@ import {
     useRouteMatch,
     Switch
   } from "react-router-dom";
+  import {CrpSwap} from './CrpSwap/CrpSwap';
+  import {AddCrp} from './AddCrp/AddCrp';
 
  export const Crp: React.FC = () => {
     let { path, url } = useRouteMatch(); 
@@ -21,15 +24,22 @@ import {
                <CrpList />
             </StyledListContainer>
             <StyledCrpSwapContainer>
-            <h4>Białko C-reaktywne (CRP) - wykres ostatnich wyników</h4>
-            <h4>Białko C-reaktywne (CRP) - wynik ostatniego badania</h4>
-            <StyledButton
+            <Switch>
+              <Route exact path={path}>
+                 <CrpSwap />
+                   <StyledLink to={`${url}/addCrp`}>
+                      <StyledButton
                         size="small"
                         variant="contained"
                         color="primary">
                             Dodaj wyniki badań
-                </StyledButton>
-
+                       </StyledButton>
+                   </StyledLink>       
+               </Route>
+               <Route path={`${path}/addCrp`}>
+                  <AddCrp />
+               </Route>
+            </Switch>                
             </StyledCrpSwapContainer>
         </StyledContainer>
     )

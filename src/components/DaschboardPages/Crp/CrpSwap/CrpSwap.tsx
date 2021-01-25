@@ -1,12 +1,12 @@
 import React from 'react';
-import {StyledSwapContainer, ChartContainer} from './CbcSwap.styled';
+import {StyledSwapContainer, ChartContainer} from './CrpSwap.styled';
 import {CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis} from 'recharts';
 
-export const CbcSwap: React.FC = () => {
+export const CrpSwap: React.FC = () => {
     // const data = results.chartData;
     return (
         <StyledSwapContainer>
-            <h4>Morfologia krwi - wykres ostatnich wyników</h4>
+            <h4>Białko C-reaktywne (CRP) - wykres ostatnich wyników</h4>
             <ChartContainer>
             <LineChart
                 width={600}
@@ -30,7 +30,7 @@ export const CbcSwap: React.FC = () => {
                 <Line type="monotone" dataKey="Hematokryt" stroke="#071e4a" />
             </LineChart>
         </ChartContainer>
-            <h4>Morfologia krwi - wynik ostatniego badania</h4>
+        <h4>Białko C-reaktywne (CRP) - wynik ostatniego badania</h4>
         </StyledSwapContainer>
     )
 }

@@ -142,19 +142,19 @@ export const DashboardDrawer = () => {
           <Route path={`${path}/cbc`}>
             <Cbc />
           </Route>
-          <Route exact path={`${path}/surgeries`}>
+          <Route path={`${path}/surgeries`}>
             <Surgeries />
           </Route>
-          <Route exact path={`${path}/balances`}>
+          <Route path={`${path}/balances`}>
             <Balances />
           </Route>
-          <Route exact path={`${path}/medicines`}>
+          <Route path={`${path}/medicines`}>
             <Medicines />
           </Route>
-          <Route exact path={`${path}/crp`}>
+          <Route path={`${path}/crp`}>
             <Crp />
           </Route>
-          <Route exact path={`${path}/urine`}>
+          <Route path={`${path}/urine`}>
             <UrineAnalyses />
           </Route>
           <Route exact path={`${path}/biochemistry`}>
