@@ -1,6 +1,32 @@
 import React from 'react';
 import {StyledSwapContainer, ChartContainer} from './CrpSwap.styled';
-import {CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis} from 'recharts';
+import {
+  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
+} from 'recharts';
+
+const data = [
+    {
+      name: 'Page A', uv: 4000, pv: 2400, amt: 2400,
+    },
+    {
+      name: 'Page B', uv: 3000, pv: 1398, amt: 2210,
+    },
+    {
+      name: 'Page C', uv: 2000, pv: 9800, amt: 2290,
+    },
+    {
+      name: 'Page D', uv: 2780, pv: 3908, amt: 2000,
+    },
+    {
+      name: 'Page E', uv: 1890, pv: 4800, amt: 2181,
+    },
+    {
+      name: 'Page F', uv: 2390, pv: 3800, amt: 2500,
+    },
+    {
+      name: 'Page G', uv: 3490, pv: 4300, amt: 2100,
+    },
+  ];
 
 export const CrpSwap: React.FC = () => {
     // const data = results.chartData;
@@ -8,27 +34,22 @@ export const CrpSwap: React.FC = () => {
         <StyledSwapContainer>
             <h4>Białko C-reaktywne (CRP) - wykres ostatnich wyników</h4>
             <ChartContainer>
-            <LineChart
-                width={600}
-                height={300}
-                // data={data}
-                margin={{
-                    top: 0,
-                    right: 50,
-                    left: 0,
-                    bottom: 0,
-                }}
-            >
-                <CartesianGrid strokeDasharray="4 4" />
-                <XAxis dataKey="key" />
-                <YAxis />
-                <Legend />
-                {/* <Tooltip formatter={label => currencyFormat(label, currencyValue)} /> */}
-                <Line type="monotone" dataKey="Leukocyty" stroke="#00e0b4" activeDot={{r: 8}} />
-                <Line type="monotone" dataKey="Płytki krwi" stroke="#071e4a" />
-                <Line type="monotone" dataKey="Hemoglobina" stroke="#ff0000" />
-                <Line type="monotone" dataKey="Hematokryt" stroke="#071e4a" />
-            </LineChart>
+            <BarChart
+        width={500}
+        height={300}
+        data={data}
+        margin={{
+          top: 5, right: 30, left: 20, bottom: 5,
+        }}
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="name" />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Bar dataKey="pv" fill="#8884d8" />
+        <Bar dataKey="uv" fill="#82ca9d" />
+      </BarChart>
         </ChartContainer>
         <h4>Białko C-reaktywne (CRP) - wynik ostatniego badania</h4>
         </StyledSwapContainer>
