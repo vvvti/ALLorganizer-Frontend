@@ -3,11 +3,20 @@ import {
     StyledContainer,
     StyledListContainer,
     StyledUrineSwapContainer,
-    StyledButton
+    StyledButton,
+    StyledLink
 } from './UrineAnalyses.styled';
 import {UrineList} from './UrineList/UrineList';
+import {
+    Route,
+    useRouteMatch,
+    Switch
+  } from "react-router-dom";
+import {UrineSwap} from './UrineSwap/UrineSwap';
+import {AddUrine} from './AddUrine/AddUrine';
 
  export const UrineAnalyses: React.FC = () => {
+    let { path, url } = useRouteMatch(); 
     return (
         <StyledContainer>
             <StyledListContainer>
@@ -15,15 +24,22 @@ import {UrineList} from './UrineList/UrineList';
                <UrineList />
             </StyledListContainer>
             <StyledUrineSwapContainer>
-            <h4>Badania moczu - wykres ostatnich wyników</h4>
-            <h4>Badania moczu - wynik ostatniego badania</h4>
-            <StyledButton
+            <Switch>
+              <Route exact path={path}>
+                 <UrineSwap />
+                   <StyledLink to={`${url}/addUrine`}>
+                      <StyledButton
                         size="small"
                         variant="contained"
                         color="primary">
                             Dodaj wyniki badań
-                </StyledButton>
-
+                       </StyledButton>
+                   </StyledLink>       
+               </Route>
+               <Route path={`${path}/addUrine`}>
+                  <AddUrine />
+               </Route>
+            </Switch>                
             </StyledUrineSwapContainer>
         </StyledContainer>
     )
