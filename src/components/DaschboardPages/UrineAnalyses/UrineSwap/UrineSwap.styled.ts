@@ -7,7 +7,6 @@ export const StyledLink = styled(NavLink)`
     color: black;
 `;
 
-
 export const StyledButton = styled(Button)`
     width: 200px;
     height: 40px;
@@ -26,4 +25,14 @@ export const StyledSwapContainer = styled.div`
 export const ChartContainer = styled.div`
     margin: 0;
     padding: 15px;
+`;
+
+export const StyledLastAnalyses = styled.div`
+    padding: 10px;
+    height: 10em;
+    width: 90%;
+`;
+
+export const StyledHeader = styled.h4`
+    color: gray;
 `;
