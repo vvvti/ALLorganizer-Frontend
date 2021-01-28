@@ -3,11 +3,20 @@ import {
     StyledContainer,
     StyledListContainer,
     StyledBiochemistrySwapContainer,
-    StyledButton
+    StyledButton,
+    StyledLink
 } from './Biochemistry.styled';
 import {BiochemistryList} from './BiochemistryList/BiochemistryList';
+import {
+    Route,
+    useRouteMatch,
+    Switch
+  } from "react-router-dom";
+  import {BiochemistrySwap} from './BiochemistrySwap/BiochemistrySwap';
+  import {AddBiochemistry} from './AddBiochemistry/AddBiochemistry';
 
  export const Biochemistry: React.FC = () => {
+    let { path, url } = useRouteMatch();
     return (
         <StyledContainer>
             <StyledListContainer>
@@ -15,15 +24,22 @@ import {BiochemistryList} from './BiochemistryList/BiochemistryList';
                <BiochemistryList />
             </StyledListContainer>
             <StyledBiochemistrySwapContainer>
-            <h4>Biochemia - wykres ostatnich wyników</h4>
-            <h4>Biochemia - wynik ostatniego badania</h4>
-            <StyledButton
+            <Switch>
+              <Route exact path={path}>
+                 <BiochemistrySwap />
+                   <StyledLink to={`${url}/addBiochemistry`}>
+                      <StyledButton
                         size="small"
                         variant="contained"
                         color="primary">
                             Dodaj wyniki badań
-                </StyledButton>
-
+                       </StyledButton>
+                   </StyledLink>       
+               </Route>
+               <Route path={`${path}/addBiochemistry`}>
+                  <AddBiochemistry />
+               </Route>
+            </Switch>        
             </StyledBiochemistrySwapContainer>
         </StyledContainer>
     )

@@ -157,7 +157,7 @@ export const DashboardDrawer = () => {
           <Route path={`${path}/urine`}>
             <UrineAnalyses />
           </Route>
-          <Route exact path={`${path}/biochemistry`}>
+          <Route path={`${path}/biochemistry`}>
             <Biochemistry />
           </Route>
         </Switch>
