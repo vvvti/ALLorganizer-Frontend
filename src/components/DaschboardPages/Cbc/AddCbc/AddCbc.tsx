@@ -1,13 +1,24 @@
 import 'date-fns';
 import React from 'react';
+import {Link} from 'react-router-dom';
 import DateFnsUtils from '@date-io/date-fns';
-import {AddCbcContainer, StyledTextField, StyledHeader, StyledDateTime} from './AddCbc.styled';
+import {
+  AddCbcContainer,
+  StyledTextField,
+  StyledHeader,
+  StyledDateTime,
+  StyledButton,
+  StyledCloseButton
+} from './AddCbc.styled';
 
 import {
     MuiPickersUtilsProvider,
     KeyboardTimePicker,
     KeyboardDatePicker,
   } from '@material-ui/pickers';
+  import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
+  import CancelIcon from '@material-ui/icons/Cancel';
+  
 
 export const AddCbc = () => {
     const [selectedDate, setSelectedDate] = React.useState<Date | null>(
@@ -20,6 +31,11 @@ export const AddCbc = () => {
 
     return (
         <AddCbcContainer>
+          <Link to="/dashboard/cbc">
+            <StyledCloseButton aria-label="cancel" >
+            <CancelIcon />
+            </StyledCloseButton>
+          </Link>
             <StyledHeader>Dodanie nowych badań morfologii krwi</StyledHeader>
             <MuiPickersUtilsProvider utils={DateFnsUtils}>
             <StyledDateTime>
@@ -90,13 +106,118 @@ export const AddCbc = () => {
                   size="small"
                 />
                 <StyledTextField
-                  required
                   id="outlined"
                   label="Erytrocyty"
                   defaultValue=""
                   variant="outlined"
                   size="small"
                 />
+                <StyledTextField
+                  id="outlined"
+                  label="MCV"
+                  defaultValue=""
+                  variant="outlined"
+                  size="small"
+                />
+                <StyledTextField
+                  id="outlined"
+                  label="MCH"
+                  defaultValue=""
+                  variant="outlined"
+                  size="small"
+                />
+                <StyledTextField
+                  id="outlined"
+                  label="MCHC"
+                  defaultValue=""
+                  variant="outlined"
+                  size="small"
+                />
+                <StyledTextField
+                  id="outlined"
+                  label="RDW-SD"
+                  defaultValue=""
+                  variant="outlined"
+                  size="small"
+                />
+                <StyledTextField
+                  id="outlined"
+                  label="RDW-CV"
+                  defaultValue=""
+                  variant="outlined"
+                  size="small"
+                />
+                <StyledTextField
+                  id="outlined"
+                  label="PDW"
+                  defaultValue=""
+                  variant="outlined"
+                  size="small"
+                />
+                <StyledTextField
+                  id="outlined"
+                  label="MPV"
+                  defaultValue=""
+                  variant="outlined"
+                  size="small"
+                />
+                <StyledTextField
+                  id="outlined"
+                  label="P-LCR"
+                  defaultValue=""
+                  variant="outlined"
+                  size="small"
+                />
+                <StyledTextField
+                  id="outlined"
+                  label="PCT"
+                  defaultValue=""
+                  variant="outlined"
+                  size="small"
+                />
+                <StyledTextField
+                  id="outlined"
+                  label="Limfocyty"
+                  defaultValue=""
+                  variant="outlined"
+                  size="small"
+                />
+                <StyledTextField
+                  id="outlined"
+                  label="Monocyty"
+                  defaultValue=""
+                  variant="outlined"
+                  size="small"
+                />
+                <StyledTextField
+                  id="outlined"
+                  label="Eozynofile"
+                  defaultValue=""
+                  variant="outlined"
+                  size="small"
+                />
+                <StyledTextField
+                  id="outlined"
+                  label="Bazofile"
+                  defaultValue=""
+                  variant="outlined"
+                  size="small"
+                />
+                <StyledTextField
+                  id="outlined"
+                  label="Limfocyty"
+                  defaultValue=""
+                  variant="outlined"
+                  size="small"
+                />
+                <StyledButton
+                  variant="contained"
+                  color="primary"
+                  startIcon={<AddCircleOutlineIcon />}
+                >
+                Dodaj badanie
+                </StyledButton>
+
         </AddCbcContainer>
     )
 }
