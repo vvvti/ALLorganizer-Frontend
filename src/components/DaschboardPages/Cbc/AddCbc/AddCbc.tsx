@@ -18,6 +18,7 @@ import {
   } from '@material-ui/pickers';
   import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
   import CancelIcon from '@material-ui/icons/Cancel';
+  import InputAdornment from '@material-ui/core/InputAdornment';
   
 
 export const AddCbc = () => {
@@ -72,6 +73,10 @@ export const AddCbc = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
+                  InputProps={{
+                    endAdornment: <InputAdornment position="start">tys/μl</InputAdornment>,
+                  }}
+                  
                 />
                 <StyledTextField
                   required
@@ -80,6 +85,9 @@ export const AddCbc = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
+                  InputProps={{
+                    endAdornment: <InputAdornment position="start">g/dl</InputAdornment>,
+                  }}
                 />
                 <StyledTextField
                   required
@@ -88,6 +96,9 @@ export const AddCbc = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
+                  InputProps={{
+                    endAdornment: <InputAdornment position="start">tys/μl</InputAdornment>,
+                  }}
                 />
                 <StyledTextField
                   required
@@ -96,6 +107,9 @@ export const AddCbc = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
+                  InputProps={{
+                    endAdornment: <InputAdornment position="start">%</InputAdornment>,
+                  }}
                 />
                 <StyledTextField
                   required
@@ -104,6 +118,9 @@ export const AddCbc = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
+                  InputProps={{
+                    endAdornment: <InputAdornment position="start">tys/μl</InputAdornment>,
+                  }}
                 />
                 <StyledTextField
                   id="outlined"
@@ -111,6 +128,9 @@ export const AddCbc = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
+                  InputProps={{
+                    endAdornment: <InputAdornment position="start">tys/μl</InputAdornment>,
+                  }}
                 />
                 <StyledTextField
                   id="outlined"
@@ -118,6 +138,9 @@ export const AddCbc = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
+                  InputProps={{
+                    endAdornment: <InputAdornment position="start">fl</InputAdornment>,
+                  }}
                 />
                 <StyledTextField
                   id="outlined"
@@ -125,6 +148,9 @@ export const AddCbc = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
+                  InputProps={{
+                    endAdornment: <InputAdornment position="start">pg</InputAdornment>,
+                  }}
                 />
                 <StyledTextField
                   id="outlined"
@@ -132,6 +158,9 @@ export const AddCbc = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
+                  InputProps={{
+                    endAdornment: <InputAdornment position="start">g/dl</InputAdornment>,
+                  }}
                 />
                 <StyledTextField
                   id="outlined"
@@ -139,6 +168,9 @@ export const AddCbc = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
+                  InputProps={{
+                    endAdornment: <InputAdornment position="start">fl</InputAdornment>,
+                  }}
                 />
                 <StyledTextField
                   id="outlined"
@@ -146,6 +178,9 @@ export const AddCbc = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
+                  InputProps={{
+                    endAdornment: <InputAdornment position="start">%</InputAdornment>,
+                  }}
                 />
                 <StyledTextField
                   id="outlined"
@@ -153,6 +188,9 @@ export const AddCbc = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
+                  InputProps={{
+                    endAdornment: <InputAdornment position="start">fl</InputAdornment>,
+                  }}
                 />
                 <StyledTextField
                   id="outlined"
@@ -160,6 +198,9 @@ export const AddCbc = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
+                  InputProps={{
+                    endAdornment: <InputAdornment position="start">fl</InputAdornment>,
+                  }}
                 />
                 <StyledTextField
                   id="outlined"
@@ -167,6 +208,9 @@ export const AddCbc = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
+                  InputProps={{
+                    endAdornment: <InputAdornment position="start">%</InputAdornment>,
+                  }}
                 />
                 <StyledTextField
                   id="outlined"
@@ -174,6 +218,9 @@ export const AddCbc = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
+                  InputProps={{
+                    endAdornment: <InputAdornment position="start">%</InputAdornment>,
+                  }}
                 />
                 <StyledTextField
                   id="outlined"
@@ -181,6 +228,9 @@ export const AddCbc = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
+                  InputProps={{
+                    endAdornment: <InputAdornment position="start">tys/μl</InputAdornment>,
+                  }}
                 />
                 <StyledTextField
                   id="outlined"
@@ -188,6 +238,9 @@ export const AddCbc = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
+                  InputProps={{
+                    endAdornment: <InputAdornment position="start">tys/μl</InputAdornment>,
+                  }}
                 />
                 <StyledTextField
                   id="outlined"
@@ -195,6 +248,9 @@ export const AddCbc = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
+                  InputProps={{
+                    endAdornment: <InputAdornment position="start">tys/μl</InputAdornment>,
+                  }}
                 />
                 <StyledTextField
                   id="outlined"
@@ -202,6 +258,9 @@ export const AddCbc = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
+                  InputProps={{
+                    endAdornment: <InputAdornment position="start">tys/μl</InputAdornment>,
+                  }}
                 />
                 <StyledTextField
                   id="outlined"
@@ -209,6 +268,9 @@ export const AddCbc = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
+                  InputProps={{
+                    endAdornment: <InputAdornment position="start">tys/μl</InputAdornment>,
+                  }}
                 />
                 <StyledButton
                   variant="contained"

@@ -21,10 +21,14 @@ export const AddCbcContainer = styled.div`
 
 export const StyledTextField = styled(TextField)`
     margin: 3px 10px;
+    width: 250px;
+    height: 20px:
 `;
 
 export const StyledHeader = styled.h4`
     margin-left: 120px;
+    margin-top: 10px;
+    margin-bottom: 0px;
 `;
 
 export const StyledDateTime = styled.div`
