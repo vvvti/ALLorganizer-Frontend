@@ -13,7 +13,7 @@ export const StyledButton = styled(Button)`
     margin: 15px;    
 `; 
 
-export const AddCbcContainer = styled.div`
+export const AddBiochemistryContainer = styled.div`
     padding: 20px;
     width: 100%;
     margin-left: 60px;   
