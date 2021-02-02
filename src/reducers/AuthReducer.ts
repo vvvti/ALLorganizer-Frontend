@@ -9,11 +9,11 @@ import {
     REGISTER_FAIL
   } from "../actions/types";
 
-interface InitialStateI {
+export interface InitialStateI {
   token: string | null,
   isAuthenticated: boolean | null,
   isLoading: boolean,
-  user: boolean |null
+  user: boolean |null,
 }
 
 const initialState: InitialStateI = {
