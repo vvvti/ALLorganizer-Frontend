@@ -13,7 +13,7 @@ export const Navbar: React.FC = () => {
             <StyledTitle>ALL Organizer</StyledTitle>
             <StyledMenu>
                 <StyledNavLink to={RoutesConsts.HOME}>home</StyledNavLink>
-                <StyledNavLink to={RoutesConsts.DASHBOARD}>dashboard</StyledNavLink>
+                <StyledNavLink to={RoutesConsts.DASHBOARD}>panel</StyledNavLink>
                 <StyledNavLink to={RoutesConsts.LOGIN}>login</StyledNavLink>
                 <StyledNavLink to={RoutesConsts.REGISTRATION}>register</StyledNavLink>
                 <StyledNavLink to={RoutesConsts.USERPROFILE}>account</StyledNavLink>                

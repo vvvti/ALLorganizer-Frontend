@@ -8,13 +8,16 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import {StyledContainer} from './HomeCards.styled';
+import account from '../../assets/images/account.jpg';
+import newsletter from '../../assets/images/newsletter.jpg';
+import cooperators from '../../assets/images/cooperators.jpg';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: 450,
   },
   media: {
-    height: 220,
+    height: 250,
   },
 });
 
@@ -27,15 +30,15 @@ export const HomeCards = () => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
+          image={account}
+          title="Account"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             Utwórz nowe konto
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Zarejestruj nowe konto w aplikacji ALL organizer
+            Zarejestruj nowe konto w aplikacji ALL organizer aby móc w pełni korzystać z systemu
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -52,24 +55,24 @@ export const HomeCards = () => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
+          image={newsletter}
+          title="Newsletter"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            ALLorganizer
+            Zapisz się do Newslettera
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nam asperiores sapiente id odit eligendi reiciendis voluptatem praesentium atque officia?
+            Tutaj możesz zapisać się do Newslettera i otrzymywać najnowsze informacje dotyczące naszej aplikacji
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
+          Udostępnij
         </Button>
         <Button size="small" color="primary">
-          Learn More
+          Więcej
         </Button>
       </CardActions>
     </Card>
@@ -77,24 +80,24 @@ export const HomeCards = () => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
+          image={cooperators}
+          title="cooperators"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            ALLorganizer
+            Partnerzy naszej aplikacji
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nam asperiores sapiente id odit eligendi reiciendis voluptatem praesentium atque officia?
+            Tutaj możesz uzyskać informacje na temat partnerów naszej aplikacji
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
+          Udostępnij
         </Button>
         <Button size="small" color="primary">
-          Learn More
+          Więcej
         </Button>
       </CardActions>
     </Card>
