@@ -3,7 +3,8 @@ import {
     StyledSwapContainer,
     ChartContainer,
     StyledLastAnalyses,
-    StyledHeader
+    StyledHeader,
+    StyledResult
 } from './UrineSwap.styled';
 import {
     BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
@@ -11,25 +12,25 @@ import {
   
   const data = [
     {
-      name: '10-01-2020', uv: 4000, pv: 2400, amt: 2400,
+      name: '10-01-2020', "ciężar właściwy": 1.016, pH: 7.0, leukocyty: 3,
     },
     {
-      name: '10-02-2020', uv: 3000, pv: 1398, amt: 2210,
+      name: '10-02-2020', "ciężar właściwy": 1.028, pH: 6.7, leukocyty: 5,
     },
     {
-      name: '15-03-2020', uv: 2000, pv: 9800, amt: 2290,
+      name: '15-03-2020', "ciężar właściwy": 0.998, pH: 7.2, leukocyty: 7,
     },
     {
-      name: '13-04-2020', uv: 2780, pv: 3908, amt: 2000,
+      name: '13-04-2020', "ciężar właściwy": 0.950, pH: 7.1, leukocyty: 3,
     },
     {
-      name: '10-05-2020', uv: 1890, pv: 4800, amt: 2181,
+      name: '10-05-2020', "ciężar właściwy": 1.010, pH: 7.3, leukocyty: 0,
     },
     {
-      name: '10-06-2020', uv: 2390, pv: 3800, amt: 2500,
+      name: '10-06-2020', "ciężar właściwy": 1.076, pH: 6.9, leukocyty: 3,
     },
     {
-      name: '10-09-2020', uv: 3490, pv: 4300, amt: 2100,
+      name: '10-09-2020', "ciężar właściwy": 0.999, pH: 6.8, leukocyty: 0,
     },
   ];
 
@@ -52,16 +53,27 @@ export const UrineSwap: React.FC = () => {
                 <YAxis />
                     <Tooltip />
                     <Legend />
-                    <Bar dataKey="pv" stackId="a" fill="#8884d8" />
-                    <Bar dataKey="amt" stackId="a" fill="#82ca9d" />
-                    <Bar dataKey="uv" fill="#ffc658" />
+                    <Bar dataKey="ciężar właściwy" stackId="a" fill="#8884d8" />
+                    <Bar dataKey="pH" stackId="a" fill="#82ca9d" />
+                    <Bar dataKey="leukocyty" fill="#ffc658" />
             </BarChart>
             </ChartContainer>
             <StyledHeader>Badania moczu - wynik ostatniego badania</StyledHeader>
             <StyledLastAnalyses>
-                <p>Barwa Ciężar właściwy </p>               
-                <p>pH Bilirubina Leukocyty</p>
-                <p>Białko Bakterie</p>               
+              <div>
+                <div>Barwa</div>
+                <div>Ciężar właściwy</div>
+                <div> Leukocyty</div>
+                <div>Bakterie</div>
+                <div>pH</div>
+                </div>
+                <div>
+                <StyledResult>Słomkowy</StyledResult>
+                <StyledResult>0,999</StyledResult>
+                <StyledResult>0</StyledResult>
+                <StyledResult>nieliczne</StyledResult>
+                <StyledResult>6,8</StyledResult> 
+                </div>             
             </StyledLastAnalyses>
         </StyledSwapContainer>
     )

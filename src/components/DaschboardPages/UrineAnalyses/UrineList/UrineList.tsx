@@ -33,17 +33,16 @@ export const UrineList: React.FC = () => {
             },
         },
     ];
-
+    
     const rows = [
-        { id: 1, date: '01.01.2021', weight: 90, ph: 'uwagi', leucocytes: 200, bacteria: "nieliczne"},
-        { id: 2, date: '01.01.2021', weight: 1900, ph: 'uwagi', leucocytes: 200, bacteria: "nieliczne"},
-        { id: 3, date: '01.01.2021', weight: 500, ph: 'uwagi', leucocytes: 200, bacteria: "nieliczne"},
-        { id: 4, date: '01.01.2021', weight: 100, ph: 'uwagi', leucocytes: 200, bacteria: "nieliczne"},
-        { id: 5, date: '01.01.2021', weight: 3000, ph: 'uwagi', leucocytes: 200, bacteria: "nieliczne"},
-        { id: 6, date: '01.01.2021', weight: 20000, ph: 'uwagi', leucocytes: 200, bacteria: "nieliczne" },
-        { id: 7, date: '01.01.2021', weight: 3000, ph: 'uwagi', leucocytes: 200, bacteria: "nieliczne" },
-        { id: 8, date: '01.01.2021', weight: 100, ph: 'uwagi', leucocytes: 200, bacteria: "nieliczne" },
-        { id: 9, date: '01.01.2021', weight: 1023, ph: 'uwagi', leucocytes: 200, bacteria: "nieliczne" },
+        { id: 1, date: '10-01-2020', weight: 1.016, ph: 'uwagi', leucocytes: "1-3", bacteria: "nieliczne"},
+        { id: 2, date: '10-02-2020', weight: 1.028, ph: 'uwagi', leucocytes: "1-5", bacteria: "nieliczne"},
+        { id: 3, date: '15-03-2020', weight: 0.998, ph: 'uwagi', leucocytes: "1-7", bacteria: "nieliczne"},
+        { id: 4, date: '13-04-2020', weight: 0.950, ph: 'uwagi', leucocytes: "1-3", bacteria: "nieliczne"},
+        { id: 5, date: '10-05-2020', weight: 1.010, ph: 'uwagi', leucocytes: "0", bacteria: "nieliczne"},
+        { id: 6, date: '10-06-2020', weight: 1.076, ph: 'uwagi', leucocytes: "1-3", bacteria: "nieliczne" },
+        { id: 7, date: '10-09-2020', weight: 0.999, ph: 'uwagi', leucocytes: "0", bacteria: "nieliczne" },
+        
       ];
 
     return (
