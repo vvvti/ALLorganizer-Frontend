@@ -16,7 +16,7 @@ export const Navbar: React.FC = () => {
                 <StyledNavLink to={RoutesConsts.DASHBOARD}>panel</StyledNavLink>
                 <StyledNavLink to={RoutesConsts.LOGIN}>login</StyledNavLink>
                 <StyledNavLink to={RoutesConsts.REGISTRATION}>register</StyledNavLink>
-                <StyledNavLink to={RoutesConsts.USERPROFILE}>account</StyledNavLink>                
+                <StyledNavLink to={RoutesConsts.USERPROFILE}>profil</StyledNavLink>                
             </StyledMenu>
         </StyledNavbar>
     )
