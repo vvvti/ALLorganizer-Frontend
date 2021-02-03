@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import {colors} from '../../styles/theme';
 import {Button} from '@material-ui/core';
 
 
@@ -12,7 +11,6 @@ export const StyledContainer = styled.div`
     grid-template-areas:
         'cbc cbc ast ast'
         'crp crp urine urine';
-    // min-height: 90vh;
     margin: 20px 0;
 `;
 
@@ -21,7 +19,6 @@ export const StyledCbcContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 4px 12px ${colors.boxShadow};
     height: 35vh;
 `;
 
@@ -30,7 +27,6 @@ export const StyledCrpContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 4px 12px ${colors.boxShadow};
     height: 35vh;
 `;
 
@@ -39,7 +35,6 @@ export const StyledAstContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 4px 12px ${colors.boxShadow};
     height: 35vh;
 `;
 
@@ -48,7 +43,6 @@ export const StyledUrineContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 4px 12px ${colors.boxShadow};
     height: 35vh;
 `;
 
