@@ -3,30 +3,6 @@ import {ColDef, DataGrid} from '@material-ui/data-grid';
 import {StyledButton, StyledContainer} from './CbcList.styled';
 
 export const CbcList: React.FC = () => {
-    const data = [
-        {
-          name: '10-01-2020', Leukocyty: 5.0, pH: 7.0, "Płytki krwi": 50, Hemoglobina: 8.0, Hematokryt: 40.1,
-        },
-        {
-          name: '10-02-2020', Leukocyty: 1.2, pH: 6.7, "Płytki krwi": 100, Hemoglobina: 8.5, Hematokryt: 37.5,
-        },
-        {
-          name: '15-03-2020', Leukocyty: 2.5, pH: 7.2, "Płytki krwi": 25, Hemoglobina: 9.0, Hematokryt: 32.1,
-        },
-        {
-          name: '13-04-2020', Leukocyty: 5.0, pH: 7.1, "Płytki krwi": 200, Hemoglobina: 9.3, Hematokryt: 37.1,
-        },
-        {
-          name: '10-05-2020', Leukocyty: 1.75, pH: 7.3, "Płytki krwi": 240, Hemoglobina: 9.8, Hematokryt: 40.7,
-        },
-        {
-          name: '10-06-2020', Leukocyty: 1.07, pH: 6.9, "Płytki krwi": 180, Hemoglobina: 10.5, Hematokryt: 42.1,
-        },
-        {
-          name: '10-09-2020', Leukocyty: 0.1, pH: 6.8, "Płytki krwi": 120, Hemoglobina: 9.0, Hematokryt: 36.4,
-        },
-      ];
-
     const columns: ColDef[] = [
         {field: 'date', headerName: 'Data', width: 120},
         {field: 'leucocytes', headerName: 'Leukocyty', type: 'number', width: 160},

@@ -37,7 +37,7 @@ export const AddUrine = () => {
             <CancelIcon />
             </StyledCloseButton>
           </Link>
-            <StyledHeader>Dodanie nowych badań morfologii krwi</StyledHeader>
+            <StyledHeader>Dodanie nowych badań moczu</StyledHeader>
             <MuiPickersUtilsProvider utils={DateFnsUtils}>
             <StyledDateTime>
             <KeyboardDatePicker

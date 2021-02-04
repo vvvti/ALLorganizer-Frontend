@@ -5,7 +5,6 @@ import {
     StyledCrpContainer,
     StyledAstContainer,
     StyledUrineContainer,
-    StyledButton
 } from './DashboardGrid.styled';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';

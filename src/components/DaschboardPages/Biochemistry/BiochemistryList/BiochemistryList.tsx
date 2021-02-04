@@ -4,14 +4,6 @@ import {StyledButton, StyledContainer} from './BiochemistryList.styled';
 
 export const BiochemistryList: React.FC = () => {
 
-
-    // const rowsData = CbcList.map((obj: any) => ({
-    //     ...obj,
-    //     finalValue: obj.calculation.finalValue.toFixed(2),
-    //     periodValue: obj.calculation.periodValue,
-    //     idValue: obj.id.substring(0, 8),
-    // }));
-
     const columns: ColDef[] = [
         {field: 'date', headerName: 'Data', width: 120},
         {field: 'alt', headerName: 'ALT', type: 'number', width: 270},
@@ -33,15 +25,13 @@ export const BiochemistryList: React.FC = () => {
     ];
 
     const rows = [
-        { id: 1, date: '01.01.2021', alt: 90, ast: 200 },
-        { id: 2, date: '01.01.2021', alt: 1900, ast: 200 },
-        { id: 3, date: '01.01.2021', alt: 500, ast: 200 },
-        { id: 4, date: '01.01.2021', alt: 100, ast: 200 },
-        { id: 5, date: '01.01.2021', alt: 3000, ast: 200 },
-        { id: 6, date: '01.01.2021', alt: 20000, ast: 200 },
-        { id: 7, date: '01.01.2021', alt: 3000, ast: 200 },
-        { id: 8, date: '01.01.2021', alt: 100, ast: 200 },
-        { id: 9, date: '01.01.2021', alt: 1023, ast: 200 },
+        { id: 1, date: '07-01-2021', alt: 600, ast: 678 },
+        { id: 2, date: '13-02-2021', alt: 432, ast: 563 },
+        { id: 3, date: '10-03-2021', alt: 178, ast: 150 },
+        { id: 4, date: '28-04-2021', alt: 63, ast: 48 },
+        { id: 5, date: '12-05-2021', alt: 35, ast: 32 },
+        { id: 6, date: '07-06-2021', alt: 125, ast: 165 },
+        { id: 7, date: '19-07-2021', alt: 283, ast: 204 },
       ];
 
     return (

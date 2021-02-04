@@ -1,32 +1,32 @@
 import React from 'react';
-import {StyledSwapContainer, ChartContainer} from './BiochemistrySwap.styled';
+import {StyledSwapContainer, ChartContainer, StyledLastAnalyses, StyledHeader, StyledResult} from './BiochemistrySwap.styled';
 import {
-  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 } from 'recharts';
 
 const data = [
-    {
-      name: '10-01-2020', ast: 4000, alt: 2400,
-    },
-    {
-      name: '07-02-2020', ast: 3000, alt: 1398,
-    },
-    {
-      name: '12-03-2020', ast: 2000, alt: 780,
-    },
-    {
-      name: '31-03-2020', ast: 2780, alt: 240,
-    },
-    {
-      name: '04-04-2020', ast: 1890, alt: 1230,
-    },
-    {
-      name: '02.05.2020', ast: 2390, alt: 768,
-    },
-    {
-      name: '07-06-2020', uv: 3490, alt: 600,
-    },
-  ];
+  {
+    name: '07-01-2021', alt: 600, ast: 678,
+  },
+  {
+    name: '13-02-2021', alt: 432, ast: 563,
+  },
+  {
+    name: '10-03-2021', alt: 178, ast: 150,
+  },
+  {
+    name: '28-04-2021', alt: 63, ast: 48,
+  },
+  {
+    name: '12-05-2021', alt: 35, ast: 32,
+  },
+  {
+    name: '07-06-2021', alt: 125, ast: 165,
+  },
+  {
+    name: '19-07-2021', alt: 283, ast: 204,
+  },
+];
 
 export const BiochemistrySwap: React.FC = () => {
     // const data = results.chartData;
@@ -51,7 +51,17 @@ export const BiochemistrySwap: React.FC = () => {
         <Bar dataKey="ast" fill="#82ca9d" />
       </BarChart>
         </ChartContainer>
-        <h4>Biochemia - wynik ostatniego badania</h4>
+        <StyledHeader>Biochemia - wynik ostatniego badania</StyledHeader>
+        <StyledLastAnalyses>
+              <div>
+                <div>ALT</div>
+                <div>AST</div>
+                </div>
+                <div>
+                <StyledResult>283</StyledResult>
+                <StyledResult>204</StyledResult>
+                </div>             
+            </StyledLastAnalyses>
         </StyledSwapContainer>
     )
 }
