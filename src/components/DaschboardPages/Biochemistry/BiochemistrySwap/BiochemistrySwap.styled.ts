@@ -21,3 +21,23 @@ export const ChartContainer = styled.div`
     margin: 0;
     padding: 15px;
 `;
+
+export const StyledLastAnalyses = styled.div`
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    height: 8em;
+    width: 90%;
+    color: grey;
+    font-size: 1.2rem;
+`;
+
+export const StyledHeader = styled.h4`
+    color: gray;
+`;
+
+export const StyledResult = styled.div`
+    font-size: 1.2rem;
+    color: #8884d8;
+`;
