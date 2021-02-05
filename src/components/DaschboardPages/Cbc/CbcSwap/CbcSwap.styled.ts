@@ -9,12 +9,12 @@ export const StyledButton = styled(Button)`
 `;
 
 export const StyledSwapContainer = styled.div`
-    grid-area: swap;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 75vh;
+    
 `;
 
 export const ChartContainer = styled.div`
