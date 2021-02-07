@@ -5,7 +5,6 @@ import {colors} from '../../../styles/theme';
 export const StyledContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 340px 1fr;
     align-items: flex-start;
     grid-gap: 10px;
     grid-template-areas:
@@ -30,7 +29,7 @@ export const StyledFirstContainer = styled.div`
     flex-direction: column;
     align-items: center;
     box-shadow: 0 4px 12px ${colors.boxShadow};
-    height: 24vh;
+    height: 23vh;
 `;
 
 export const StyledSecondContainer = styled.div`
@@ -39,7 +38,7 @@ export const StyledSecondContainer = styled.div`
     flex-direction: column;
     align-items: center;
     box-shadow: 0 4px 12px ${colors.boxShadow};
-    height: 24vh;
+    height: 23vh;
 `;
 
 export const StyledThirdContainer = styled.div`
@@ -48,5 +47,5 @@ export const StyledThirdContainer = styled.div`
     flex-direction: column;
     align-items: center;
     box-shadow: 0 4px 12px ${colors.boxShadow};
-    height: 24vh;
+    height: 23vh;
 `;
