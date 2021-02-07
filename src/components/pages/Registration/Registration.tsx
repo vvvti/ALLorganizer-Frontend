@@ -10,11 +10,11 @@ import {INITIAL_REGISTER_VALUES} from '../../../helpers/constants';
 import {validationSchema} from './Registration.helpers';
 import {RoutesConsts} from '../../../helpers/RoutesConsts';
 import {RegisterFormValues} from '../../../helpers/types';
-import {useRegister} from '../../../hooks/useRegister'
+
 
 
 export const Registration: React.FC = () => {
-    const {postRegister, registerError} = useRegister();
+    
 
     return (
         <>
@@ -22,8 +22,7 @@ export const Registration: React.FC = () => {
                 initialValues={INITIAL_REGISTER_VALUES}
                 validationSchema={validationSchema}
                 onSubmit={async (values: RegisterFormValues) => {
-                    await postRegister(values);
-                }}
+                                    }}
             >
                 {({isValid, errors, handleBlur, touched}) => (
                     <Container component="main" maxWidth="xs">
@@ -34,8 +33,7 @@ export const Registration: React.FC = () => {
                             <Typography component="h1" variant="h5">
                                 Sign up
                             </Typography>
-                            <ErrorMessage>{registerError}</ErrorMessage>
-                            <StyledForm>
+                                <StyledForm>
                                 <Grid container spacing={2}>
                                     <Grid item xs={12}>
                                         <Field
