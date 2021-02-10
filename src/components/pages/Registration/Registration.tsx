@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {useCallback} from 'react';
+import { useForm } from 'react-hook-form';
+
 import Grid from '@material-ui/core/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
@@ -14,15 +16,18 @@ import {RegisterFormValues} from '../../../helpers/types';
 
 
 export const Registration: React.FC = () => {
-    
 
+ const { register, handleSubmit } = useForm<RegisterFormValues>();
+  const onSubmit = useCallback((formValues: RegisterFormValues) => {
+    console.log(formValues);
+  }, []);
     return (
         <>
             <Formik<RegisterFormValues>
                 initialValues={INITIAL_REGISTER_VALUES}
                 validationSchema={validationSchema}
-                onSubmit={async (values: RegisterFormValues) => {
-                                    }}
+                onSubmit={async (formValues: RegisterFormValues) => {
+                     await handleSubmit(onSubmit) }}
             >
                 {({isValid, errors, handleBlur, touched}) => (
                     <Container component="main" maxWidth="xs">
@@ -43,6 +48,7 @@ export const Registration: React.FC = () => {
                                             component={InputField}
                                             prefix=""
                                             onBlur={handleBlur}
+                                            ref={register}
                                         />
                                         <ErrorMessage>{touched.username && errors.username}</ErrorMessage>                                    
                                     </Grid>
@@ -54,6 +60,7 @@ export const Registration: React.FC = () => {
                                             component={InputField}
                                             prefix=""
                                             onBlur={handleBlur}
+                                            ref={register}
                                         />
                                         <ErrorMessage>{touched.email && errors.email}</ErrorMessage>
                                     </Grid>
@@ -66,6 +73,7 @@ export const Registration: React.FC = () => {
                                             component={InputField}
                                             onBlur={handleBlur}
                                             prefix=""
+                                            ref={register}
                                         />
                                         <ErrorMessage>{touched.password && errors.password}</ErrorMessage>
                                     </Grid>
