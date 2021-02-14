@@ -26,7 +26,7 @@ export const Registration: React.FC = () => {
             <Formik<RegisterFormValues>
                 initialValues={INITIAL_REGISTER_VALUES}
                 validationSchema={validationSchema}
-                onSubmit={async (formValues: RegisterFormValues) => {
+                onSubmit={async (values:RegisterFormValues) => {
                      await handleSubmit(onSubmit) }}
             >
                 {({isValid, errors, handleBlur, touched}) => (
