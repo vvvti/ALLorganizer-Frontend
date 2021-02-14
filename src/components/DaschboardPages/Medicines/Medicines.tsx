@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import {StyledContainer, StyledAllContainer, StyledFirstContainer, StyledSecondContainer, StyledThirdContainer} from './Medicines.styled';
 
- export const Medicines: React.FC = () => {
+export const Medicines: React.FC = () => {
     return (
-        <div>
-            <h2>Medicines</h2>
-        </div>
+        <StyledContainer>
+            <StyledAllContainer><h1>All</h1></StyledAllContainer>
+            <StyledFirstContainer><h4>First</h4></StyledFirstContainer>
+            <StyledSecondContainer><h4>Second</h4></StyledSecondContainer>
+            <StyledThirdContainer><h4>Third</h4></StyledThirdContainer>
+        </StyledContainer>
     )
 }
