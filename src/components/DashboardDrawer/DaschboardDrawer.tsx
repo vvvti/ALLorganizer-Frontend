@@ -29,6 +29,7 @@ import {Cbc} from '../DaschboardPages/Cbc/Cbc';
 import {Crp} from '../DaschboardPages/Crp/Crp';
 import {UrineAnalyses} from '../DaschboardPages/UrineAnalyses/UrineAnalyses';
 import {Biochemistry} from '../DaschboardPages/Biochemistry/Biochemistry';
+import {Schedule} from '../DaschboardPages/Schedule/Schedule';
 
 
 const drawerWidth = 240;
@@ -103,7 +104,13 @@ export const DashboardDrawer = () => {
                 <ListItemIcon><LocalPharmacyIcon /></ListItemIcon>
                 <ListItemText>Lekarstwa</ListItemText>              
               </ListItem>
-            </StyledLink>            
+            </StyledLink>
+            <StyledLink to={`${url}/schedule`}>
+              <ListItem button>              
+                <ListItemIcon><LocalPharmacyIcon /></ListItemIcon>
+                <ListItemText>Grafik</ListItemText>              
+              </ListItem>
+            </StyledLink>
         </List>
         <Divider />
         <List>
@@ -159,6 +166,9 @@ export const DashboardDrawer = () => {
           </Route>
           <Route path={`${path}/biochemistry`}>
             <Biochemistry />
+          </Route>
+          <Route path={`${path}/schedule`}>
+            <Schedule />
           </Route>
         </Switch>
       </main>
