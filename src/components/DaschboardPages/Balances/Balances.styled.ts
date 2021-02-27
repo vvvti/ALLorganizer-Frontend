@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {colors} from '../../../styles/theme';
+import TextField from '@material-ui/core/TextField';
 
 
 export const StyledContainer = styled.div`
@@ -30,4 +31,13 @@ export const StyledFirstContainer = styled.div`
     align-items: center;
     box-shadow: 0 4px 12px ${colors.boxShadow};
     height: 72vh;
+`;
+
+export const StyledTextField = styled(TextField)`
+    margin: 3px 10px;
+    width: 250px;
+`;
+
+export const StyledDateTime = styled.div`
+    padding: 10px;
 `;
