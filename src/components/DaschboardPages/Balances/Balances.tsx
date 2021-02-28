@@ -7,7 +7,7 @@ import {
     KeyboardDatePicker,
   } from '@material-ui/pickers';
   
-  import InputAdornment from '@material-ui/core/InputAdornment';
+import InputAdornment from '@material-ui/core/InputAdornment';
 
 export const Balances: React.FC = () => {
     const [selectedDate, setSelectedDate] = React.useState<Date | null>(
