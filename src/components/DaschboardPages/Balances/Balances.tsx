@@ -31,7 +31,7 @@ export const Balances: React.FC = () => {
               format="MM/dd/yyyy"
               margin="normal"
               id="analyses-date"
-              label="Data badania"
+              label="Data bilansu"
               value={selectedDate}
               onChange={handleDateChange}
               KeyboardButtonProps={{
@@ -41,7 +41,7 @@ export const Balances: React.FC = () => {
         <KeyboardTimePicker
           margin="normal"
           id="analyses-time"
-          label="Godzina badania"
+          label="Godzina bilansu"
           value={selectedDate}
           onChange={handleDateChange}
           KeyboardButtonProps={{
