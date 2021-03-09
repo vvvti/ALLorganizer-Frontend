@@ -32,7 +32,7 @@ export const Surgeries: React.FC = () => {
               format="MM/dd/yyyy"
               margin="normal"
               id="analyses-date"
-              label="Data badania"
+              label="Data zabiegu"
               value={selectedDate}
               onChange={handleDateChange}
               KeyboardButtonProps={{
@@ -42,7 +42,7 @@ export const Surgeries: React.FC = () => {
         <KeyboardTimePicker
           margin="normal"
           id="analyses-time"
-          label="Godzina badania"
+          label="Godzina zabiegu"
           value={selectedDate}
           onChange={handleDateChange}
           KeyboardButtonProps={{
@@ -59,10 +59,6 @@ export const Surgeries: React.FC = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
-                  InputProps={{
-                    endAdornment: <InputAdornment position="start">ml</InputAdornment>,
-                  }}
-                  
                 />
                 <StyledTextField
                   required
@@ -71,9 +67,6 @@ export const Surgeries: React.FC = () => {
                   defaultValue=""
                   variant="outlined"
                   size="small"
-                  InputProps={{
-                    endAdornment: <InputAdornment position="start">ml</InputAdornment>,
-                  }}
                 />
             </StyledFirstContainer>
             <StyledSecondContainer><h4>Second</h4></StyledSecondContainer>

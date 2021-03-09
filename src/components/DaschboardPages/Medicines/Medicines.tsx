@@ -28,7 +28,7 @@ export const Medicines: React.FC = () => {
               format="MM/dd/yyyy"
               margin="normal"
               id="analyses-date"
-              label="Data badania"
+              label="Data dawki"
               value={selectedDate}
               onChange={handleDateChange}
               KeyboardButtonProps={{
@@ -38,7 +38,7 @@ export const Medicines: React.FC = () => {
         <KeyboardTimePicker
           margin="normal"
           id="analyses-time"
-          label="Godzina badania"
+          label="Godzina dawki"
           value={selectedDate}
           onChange={handleDateChange}
           KeyboardButtonProps={{
