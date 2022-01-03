@@ -23,6 +23,7 @@
     "@types/yup": "^0.29.9",
     "axios": "^0.21.1",
     "formik": "^2.2.4",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.1.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
@@ -42,7 +43,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -61,5 +64,6 @@
   },
   "devDependencies": {
     "date-fns": "^2.16.1"
-  }
+  },
+  "homepage": "https://vvvti.github.io/allorganizer"
 }
