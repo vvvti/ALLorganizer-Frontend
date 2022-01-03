@@ -5,8 +5,7 @@ import {
     MuiPickersUtilsProvider,
     KeyboardTimePicker,
     KeyboardDatePicker,
-  } from '@material-ui/pickers';  
-import InputAdornment from '@material-ui/core/InputAdornment';
+  } from '@material-ui/pickers';
 import DateFnsUtils from '@date-io/date-fns';
 
 export const Surgeries: React.FC = () => {
