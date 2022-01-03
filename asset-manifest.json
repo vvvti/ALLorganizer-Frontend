@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/ALLorganizer-Frontend/static/js/main.0e2b40c5.js",
+    "static/media/cooperators.jpg": "/ALLorganizer-Frontend/static/media/cooperators.51a28dfb7eff6242d889.jpg",
+    "static/media/account.jpg": "/ALLorganizer-Frontend/static/media/account.713d1d1e587ac1f9590a.jpg",
+    "static/media/newsletter.jpg": "/ALLorganizer-Frontend/static/media/newsletter.8efe99209484579cbe5a.jpg",
+    "static/media/urine.jpg": "/ALLorganizer-Frontend/static/media/urine.de7d63297a910bc5199b.jpg",
+    "static/media/biochemy.jpg": "/ALLorganizer-Frontend/static/media/biochemy.5be34b17caa23ec9372f.jpg",
+    "static/media/crp.jpg": "/ALLorganizer-Frontend/static/media/crp.f053b8e2b29c034f0ef3.jpg",
+    "static/media/cbc.jpg": "/ALLorganizer-Frontend/static/media/cbc.08e669f648ef9d472720.jpg",
+    "index.html": "/ALLorganizer-Frontend/index.html",
+    "main.0e2b40c5.js.map": "/ALLorganizer-Frontend/static/js/main.0e2b40c5.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.0e2b40c5.js"
+  ]
+}
